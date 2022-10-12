@@ -8,17 +8,34 @@
     <body>
         <h1 id='title'>Page title</h1>
         <p id='description'>Description</p>
-    <form id='survey-form'>
-        <label id='name-label' for='name'>Name:</label>
+
+        <form id='survey-form'>
+            <label id='name-label' for='name'>Name:</label>
             <input id='name' type='text' required placeholder='Enter your name'/>
-        <label id='email-label' for='email'>Email:</label>
+
+            <label id='email-label' for='email'>Email:</label>
             <input id='email' type='email' required placeholder='Enter your email'/>
-        <label id='number-label' for='number'>Age (optional):</label>
+
+            <label id='number-label' for='number'>Age (optional):</label>
             <input id='number' type='number' min='1' max='110' placeholder='Age'/>
-        <select id='dropdown'>
-            <option value='full-time'>Full Time</option>
-            <option value='part-time'>Part Time</option>
-        </select>
-    </form>
+
+            <label for='dropdown'>Role Type:</label>
+            <select id='dropdown'>
+                <option value='full-time'>Full Time</option>
+                <option value='part-time'>Part Time</option>
+            </select>
+
+            <input type="radio" id="yes-active" name="fav_language" value="yes">
+            <label for="yes-active">Yes</label><br>
+            <input type="radio" id="no-active" name="fav_language" value="no">
+            <label for="no-active">No</label><br>
+
+            <input type="checkbox" id="front-end" name="discipline1" value="front-end">
+            <label for="front-end">Front End</label><br>
+            <input type="checkbox" id="back-end" name="discipline2" value="back-end">
+            <label for="back-end">Back End</label><br>
+            <input type="checkbox" id="full-stack" name="discipline3" value="full-stack">
+            <label for="full-stack">Full Stack</label><br>
+        </form>
     </body>
 </html>
